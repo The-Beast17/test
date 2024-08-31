@@ -1,0 +1,217 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    width : 100%;
+    height : 100vh;
+}
+
+body{
+    background-color: #e5e7df;
+    font-family:Helvetica, sans-serif;
+    position: relative;
+}
+
+nav{
+    width : 100vw;
+    padding : 3.3vh  2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*if we give any content to position fix it only contain centent width so we can give a width */
+    position: fixed;/*it is used to fix the content on the screen in can't be moving scrolling*/
+    top : 0;
+    z-index: 100;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 600;
+    border-bottom : 1px solid transparent;
+    padding-bottom : 7px;
+    transition: all ease-in 0.50s;
+}
+
+nav a:hover{
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    display: flex;
+    gap : 1.7vw;
+    list-style:none; /*to chance the list style*/
+}
+
+nav h1{
+    font-size: 1.8vw; /*3.5vh*/
+}
+
+nav sup{
+    font-size: 1.8vh;
+}
+
+/*******************************************************/
+
+/*content */
+.page1 {
+    /* height:100vh; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.content .left{
+    /* padding-left: 2vw; */
+    font-size: 20px;
+    width : 23%;
+}
+
+.content .left p{
+    line-height: 4vh;
+    margin-bottom: 4vh;
+}
+
+.content .left button{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: 300;
+    width : 70%;
+    padding-bottom: 10px;
+    
+}
+.content .right{
+    width : 56%;
+}
+
+.content .right h1{
+    font-size: 6.3vh;
+    font-weight: 500;
+}
+
+.page1 .slider{
+    width:100%;
+    /* height:55vh; */
+    /*hide the data out side the parent*/
+    overflow: hidden;
+    white-space:nowrap;
+    display: flex;
+}
+
+.page1 .slider>.slider-inside{
+    display: inline-block;
+    height : 55vh;
+    display: flex;
+    align-items: center;
+    animation: carousal 15s linear infinite ;
+}
+
+@keyframes carousal {
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+.page1 .slider .slider-inside h1{
+    font-size: 45vh;
+    font-family:Helvetica, "New Amsterdam",sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 900; 
+}
+.page1 .slider >.slider-inside > img{
+    height : 60%;
+    object-fit: cover;
+}
+
+/*page 2 **************************/
+.page2{
+    padding :0 2%;
+}
+.page2 > h1{
+    width : 67%;
+    font-size: 6.5vh;
+    font-weight: 500;
+}
+
+.page2 > h1:first-child{
+    margin : 3.5% 0;
+}
+
+.page2 > h1:last-child{
+    padding-bottom : 6.4%;
+}
+
+
+hr{
+    border: none; 
+    margin-top : 6.4%;
+    margin-bottom :2.8%;
+    padding : 0.02% 0;
+    background-color: rgb(188, 185, 185);
+   
+}
+
+/*page 3*****/
+.page3{
+    width : 100%;
+    display: flex;
+    padding: 0 2%;
+    padding-bottom: 18%;
+}
+
+.page3 > h1:first-child{
+    width : 51%;
+    font-size: 3vh;
+    font-weight: 500;
+}
+.page3 span{
+    display: inline-block;
+    transform: translateY(-1.2%);
+    font-size: 75%;
+    padding-bottom: 30%;
+}
+
+.page3 div{
+    width : 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.page3 div  h1 {
+    font-size: 3vh;
+    font-weight: 500;
+    padding-bottom: 6.5%;
+}
+.page3 div  p {
+    color: #949690;
+    font-size: 2.8vh; 
+    font-weight: 600; 
+    padding-bottom: 8%;
+    line-height: 3.5vh;
+}
+
+.page3 h1:last-child{
+    width : 17%;
+    font-size: 3vh;
+    font-weight: 500;
+    text-align: right;
+}
