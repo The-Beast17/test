@@ -108,7 +108,7 @@ nav sup{
     /* height:55vh; */
     /*hide the data out side the parent*/
     overflow: hidden;
-    white-space:nowrap;
+    /* white-space:nowrap; */
     display: flex;
 }
 
@@ -116,7 +116,7 @@ nav sup{
     display: inline-block;
     height : 55vh;
     display: flex;
-    align-items: center;
+    align-items:baseline;
     animation: carousal 15s linear infinite ;
 }
 
