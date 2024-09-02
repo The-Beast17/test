@@ -1,12 +1,12 @@
 *{
-    margin : 0;
-    padding : 0;
+    margin : 0px;
+    padding : 0px;
     box-sizing: border-box;
 }
 
 html , body{
     width : 100%;
-    height : 100vh;
+    /* height : 100vh; */
 }
 
 body{
@@ -15,8 +15,8 @@ body{
     position: relative;
 }
 
-nav{
-    width : 100vw;
+nav , .page4nav{
+    width : 100%;
     padding : 3.3vh  2.5vw;
     display: flex;
     justify-content: space-between;
@@ -214,4 +214,57 @@ hr{
     font-size: 3vh;
     font-weight: 500;
     text-align: right;
+}
+
+/*page 4***********************/
+.page4{
+    width : 100%;
+    background-color: white;
+    padding: 0 2vw;
+}
+.page4 > .navpage4{
+     position : initial;
+     padding-right: 2vw;
+}
+
+.navpage4 h2 , .navpage4 a{
+    font-size: 2.8vh;
+    font-weight: 400;
+}
+
+.page4 .content{
+    width : 100%;
+    font-size: 37vh;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    flex-wrap: wrap;
+} 
+
+.page4 .content .work-box{
+    width : 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.page4 .content .video-box{
+    height: 27vh;
+    width : 100%; 
+}
+
+.page4 .content .video-box > video{
+     height : 100%;
+     width : 100%;
+     object-fit: cover;
+     object-position: center;
+     display: flex;
+}
+
+.page4 >.content .video-box >.video-content{
+    height:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 2vh;
+    font-weight: 300;
 }
