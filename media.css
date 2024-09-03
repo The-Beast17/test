@@ -1,0 +1,71 @@
+nav i{
+     display: none;
+}
+
+@media (max-width: 600px){
+  nav{
+    width :100vw;
+    justify-content: space-between;
+    padding : 3.3vw 6vw;
+  }
+  nav h1{
+    font-size: 5.7vw;
+  }
+
+  nav ul a{
+    display: none;
+  }
+  nav a{
+    margin-right : 15vw;
+    font-size: 5.2vw;
+  }
+
+  nav i{
+    font-size: 4.5vh;
+    display: initial;
+}
+.page1{
+    padding : 0 5vw;
+    width : 100vw;
+}
+.page1 .empty{
+    height: 12vh;
+}
+.page1 .content{
+    display: initial;
+}
+
+.page1 .content .left{
+ width : 100%;
+}
+.page1 .content .left p{
+    font-size: 4.5vw;
+    line-height: 6.5vw;
+    font-weight: 500;
+}
+
+.page1 .content .left button {
+    padding-top: 6vw;
+    font-size: 5.5vw;
+    border-bottom: 2px solid black;
+}
+
+.page1 .content .right{
+ padding-top : 10vh;   
+ width :100%;
+}
+
+.page1 .content .right h1{
+    font-size: 11vw;
+}
+
+/*slider***********************/
+.page1 .slider .slider-inside h1{
+    font-size:45vw;
+}
+.page1 .slider >.slider-inside > img{
+    height : 33vw;
+}
+
+
+}
