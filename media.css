@@ -3,13 +3,19 @@ nav i{
 }
 
 @media (max-width: 600px){
+
+ .body{
+  overflow-x: hidden;
+ }
+
   nav{
     width :100vw;
     justify-content: space-between;
+    align-items: baseline;
     padding : 3.3vw 6vw;
   }
   nav h1{
-    font-size: 5.7vw;
+    font-size: 3.1vh;
   }
 
   nav ul a{
@@ -17,26 +23,29 @@ nav i{
   }
   nav a{
     margin-right : 15vw;
-    font-size: 5.2vw;
+    font-size: 2.5vh;
   }
 
   nav i{
-    font-size: 4.5vh;
+    font-size: 4.2vh;
     display: initial;
 }
 .page1{
     padding : 0 5vw;
     width : 100vw;
+    flex-direction: column-reverse;
 }
 .page1 .empty{
-    height: 12vh;
+  /*12vh*/
+    height:6vh;
 }
 .page1 .content{
-    display: initial;
+    flex-direction: column-reverse;
 }
 
 .page1 .content .left{
- width : 100%;
+   padding-top : 6vh;   
+   width : 100%;
 }
 .page1 .content .left p{
     font-size: 4.5vw;
@@ -51,15 +60,22 @@ nav i{
 }
 
 .page1 .content .right{
- padding-top : 10vh;   
  width :100%;
 }
 
 .page1 .content .right h1{
-    font-size: 11vw;
+    font-size: 8vw;
 }
 
 /*slider***********************/
+.page1 .slider{
+  overflow: hidden;
+  padding-top: 4vh;
+}
+.page1 .slider .slider-inside{
+  height : 60vw;
+}
+
 .page1 .slider .slider-inside h1{
     font-size:45vw;
 }
@@ -67,5 +83,90 @@ nav i{
     height : 33vw;
 }
 
+/***********************page2 ************/
+.page2{
+  width : 100%;
+  overflow-x: hidden;
+}
+.page2>h1{
+  width : 100%;
+  /* text-align: center; */
+  font-size : 8vw;
+  overflow: hidden;
+}
+
+.page2 > h1:first-child{
+  margin-bottom: 5vh;
+}
+
+/*******************page3**********/
+
+.page3{
+  display : initial;
+  overflow: hidden;
+}
+.page3 > h1:first-child{
+  width : 100%;
+  font-size: 5vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.page3 span{
+  font-size: 70%;
+  padding-bottom:5%;
+}
+
+.page3 > .second-h1{
+  display: block;
+  width : 100%;
+  font-size: 5vw;
+  text-align: center;
+  /* padding-right:35vw; */
+  padding-bottom: 5vh;
+}
+
+
+.page3 div{
+  width : 100%;
+  text-align: center;
+}
+.page3 div  p {
+  font-size:4.8vw;
+}
+
+.page3 h1:last-child{
+  display: none;
+}
+
+/************page4******************/
+.page4 {
+  width : 100%
+}
+.navpage4{
+  height : 25vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navpage4 h2 {
+  width : 100%;
+  text-align: center;
+}
+.navpage4 a {
+  width : 100%;
+  text-align: center;
+}
+
+.page4 .content{
+  font-size: 17vw;
+}
+
+.page4 .work-box{
+  padding : 0 1vw;
+}
+.page4 >.content .video-box >.video-content{
+   font-size :2.3vw;
+}
 
 }
