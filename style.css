@@ -83,7 +83,7 @@ nav sup{
 }
 
 .content .left p{
-    line-height: 4vh;
+    line-height: 4vmin;
     margin-bottom: 4vh;
 }
 
@@ -246,16 +246,22 @@ hr{
 }
 
 .page4 .content{
+    text-align: center;
     width : 100%;
-    /* font-size: 37vh; */
     font-size: 17.9vw;
-    /* font-family: "Bebas Neue", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 900;
     font-style: normal; 
     flex-wrap: wrap;
 } 
+.page4 .content h1:first-child{
+    text-align: center;
+    font-size: 17.8vw;
+    font-weight: 900;
+}
 
 .page4 .content .work-box{
+    text-align: center; 
     width : 100%;
     display: flex;
     justify-content: center;  
@@ -264,7 +270,7 @@ hr{
 
 .page4 .content .video-box{
     height: 14vw;
-    width : 100%; 
+    width : 31.5vw;
 }
 
 .page4 .content .video-box > video{
@@ -275,7 +281,7 @@ hr{
      display: flex;
 }
 
-.page4 >.content .video-box >.video-content{
+.page4 > .content .video-box > .video-content{
     height:20%;
     display: flex;
     justify-content: space-between;
